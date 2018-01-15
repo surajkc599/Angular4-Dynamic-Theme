@@ -12,6 +12,8 @@ This has dependency on json-sass npm module (https://github.com/acdlite/json-sas
 4. _utils under themes would read colors from sass maps dynamically using sass map functions.
 5. This can be called from our .scss files from per component.
 
+## Built from concept
+https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
