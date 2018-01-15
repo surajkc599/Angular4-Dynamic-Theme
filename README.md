@@ -1,4 +1,9 @@
 # TabManagement
+This sample project would mainly shows concept of how we could achieve dynamic theming in Angular application.
+Angular4, Angular Cli, Tabs creation. This sample does not follow any code guidelines- please do refer and infer the concept how we can achieve together with Angular-Cli as a base, SASS and Angular 4.
+
+npm run build
+npm run start
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
