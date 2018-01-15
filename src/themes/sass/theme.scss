@@ -1,0 +1,44 @@
+$theme: (
+  dark: (
+    button: (
+      hover: red,
+      border: green,
+      focus: orange,
+      active-background: yellow
+    ),
+    textbox: (
+      hover: red,
+      border: yellow,
+      focus: blue
+    ),
+    tab: (
+      background-color: blue,
+      active-color: yellow,
+      text-color: green
+    ),
+    label: (
+      text-color: green
+    )
+  ),
+  light: (
+    button: (
+      hover: pink,
+      border: blue,
+      focus: purple,
+      active-background: pink
+    ),
+    textbox: (
+      hover: pink,
+      border: blue,
+      focus: purple
+    ),
+    tab: (
+      background-color: #f5f5f5,
+      active-color: pink,
+      text-color: #777777
+    ),
+    label: (
+      text-color: pink
+    )
+  )
+);

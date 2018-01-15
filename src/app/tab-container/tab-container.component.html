@@ -1,0 +1,12 @@
+<ng-template #defaultTabsHeader>
+  <div class="tab-headers">
+    <div class="tab-title" [ngClass]="tab.selected === true ? 'active-tab': ''" *ngFor="let tab of tabs" (click)="selectedTab(tab)">
+      {{tab.title}}
+    </div>
+  </div>
+</ng-template>
+<ng-container *ngIf="headerTemplate else defaultTabsHeader">
+    <ng-container *ngTemplateOutlet="headerTemplate; context: tabsContext;">
+    </ng-container>
+</ng-container>
+<ng-content></ng-content>

@@ -1,0 +1,16 @@
+@import "theme.scss";
+
+@function component-data($components, $component, $state) {
+    @return (map-get(map-get($components, $component), $state));
+}
+
+@function components-from-theme($theme-color) {
+    @return map-get($theme, $theme-color);
+}
+
+@function component-color($component, $state, $theme) {
+    $components: components-from-theme($theme);
+    @if ($components != null) {
+        @return component-data($components, $component, $state);
+    }
+}

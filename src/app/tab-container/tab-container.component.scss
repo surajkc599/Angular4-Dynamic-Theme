@@ -1,0 +1,37 @@
+@import "src/themes/sass/_utils.scss";
+$themes: "dark", "light";
+
+.tab-headers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    border-radius: 2px;
+    width: 600px;
+    margin-left:35%;
+    div {
+        padding: 10px;
+        width: 200px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Source Sans Pro','Helvetica Neue',sans-serif;
+        font-size: 15px;
+    }
+    div:nth-child(3) {
+        border-right: none;
+    }
+}
+
+@each $key in $themes {
+    .#{$key}
+    .tab-headers { 
+            background: component-color($component: tab, $state: background-color, $theme: $key);
+            color: component-color($component: tab, $state: text-color, $theme: $key);
+            div {
+                color: component-color($component: tab, $state: text-color, $theme: $key);
+            }
+            .active-tab {
+                background: component-color($component: tab, $state: active-color, $theme: $key);
+            }
+    }
+}

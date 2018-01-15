@@ -1,0 +1,28 @@
+@import "src/themes/sass/_utils.scss";
+$themes: "dark", "light";
+
+.tab-header {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    
+}
+
+@each $key in $themes {
+    .#{$key}
+    .tab-header { 
+        h3
+        {
+            background: component-color($component: textbox, $state: hover, $theme: $key);
+        }
+        section {
+            button.pt-dark {
+                background: component-color($component: button, $state: active-background, $theme: $key);
+            }
+            button.pt-light {
+                background: component-color($component: button, $state: active-background, $theme: $key);
+            }
+        }
+    }
+}

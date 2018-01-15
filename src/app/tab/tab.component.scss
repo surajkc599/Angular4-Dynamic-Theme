@@ -1,0 +1,67 @@
+@import "src/themes/sass/_utils.scss";
+$themes: "dark", "light";
+
+.tab {
+    position: relative;
+    left: 35%;
+    input { 
+        display: block;
+    }
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    width: 600px;
+    background: #ffffff;
+}
+app-tab > div > form >
+div {
+    padding: 10px;
+    span {
+        font-family: 'Source Sans Pro','Helvetica Neue',sans-serif;
+        font-size: 13px;
+        color: #777777;
+    }
+    input {
+        height: 20px;
+        border-radius: 2px;
+        border: 1px solid #777777;
+        font-family: 'Source Sans Pro','Helvetica Neue',sans-serif;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    input:hover {
+        border: 1px solid #cccccc;
+    }
+    textarea {
+        width: 190px;
+        display: block;
+        border-radius: 2px;
+        border: 1px solid #2C2C2C;
+    }
+    textarea:hover {
+        border: 1px solid #cccccc;
+    }
+}
+button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid #2C2C2C;
+    border-radius: 2px;
+    font-family: 'Source Sans Pro','Helvetica Neue',sans-serif;
+    font-size: 13px;
+    height: 25px;
+}
+
+@each $key in $themes {
+    .#{$key}
+    app-tab > div > form >
+    div { 
+        span {
+            color: component-color($component: label, $state: text-color, $theme: $key);
+        }
+    }
+    .#{$key}
+    button[type=submit] {
+        background: component-color($component: button, $state: active-background, $theme: $key);
+    }
+}

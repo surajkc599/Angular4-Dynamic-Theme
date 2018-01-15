@@ -1,0 +1,60 @@
+<div class="tab-header">
+  <h3>Tab Manager and dynamic theme</h3>
+  <section>
+    <button (click)="switchTheme('light')" [ngClass]="currentSelectedTheme == 'light' ? 'pt-light': ''">Light</button>
+    <button (click)="switchTheme('dark')" [ngClass]="currentSelectedTheme == 'dark' ? 'pt-dark': ''">Dark</button>
+  </section>
+</div>
+<!-- <ng-template #headerTemplate>
+    <button (click)="tabContainer.selectedTab(loginTab)">Login</button>
+    <button (click)="tabContainer.selectedTab(signup)">Signin</button>
+</ng-template> -->
+<app-tab-container [headerTemplate]="headerTemplate" #tabContainer>
+  <app-tab title="Login" #loginTab>
+    <form>
+      <div>
+        <span>UserName</span>
+        <input type="text" name="username" ngModel>
+      </div>
+      <div>
+        <span>Password</span>
+        <input type="password" name="password" ngModel>
+      </div>
+      <button type="submit">SignIn</button>
+    </form>
+  </app-tab>
+  <app-tab title="Signup" #signup>
+    <form>
+      <div>
+        <span>UserName</span>
+        <input type="text" name="username" ngModel>
+      </div>
+      <div>
+        <span>Password</span>
+        <input type="password" name="password" ngModel>
+      </div>
+      <div>
+        <span>Email</span>
+        <input type="text" name="email" ngModel>
+      </div>
+      <button type="submit" id="signup">SignUp</button>
+    </form>
+  </app-tab>
+  <app-tab title="Contact-Us">
+    <form>
+      <div>
+        <span>UserName</span>
+        <input type="text" name="username" ngModel>
+      </div>
+      <div>
+        <span>Question?</span>
+        <textarea name="question" rows="5" ngModel></textarea>
+      </div>
+      <div>
+        <span>Email</span>
+        <input type="text" name="email" ngModel>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </app-tab>
+</app-tab-container>

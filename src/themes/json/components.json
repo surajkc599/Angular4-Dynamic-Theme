@@ -1,0 +1,28 @@
+[
+    {
+        "dark": {
+            "button": {
+                "hover": "red",
+                "border": "green",
+                "focus": "orange"
+            },
+            "textbox": {
+                "hover": "red",
+                "border": "yellow",
+                "focus": "blue"
+            }
+        },
+        "light": {
+            "button": {
+                "hover": "pink",
+                "border": "blue",
+                "focus": "purple"
+            },
+            "textbox": {
+                "hover": "pink",
+                "border": "blue",
+                "focus": "purple"
+            }
+        }
+    }
+]
