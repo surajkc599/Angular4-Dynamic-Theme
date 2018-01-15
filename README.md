@@ -11,6 +11,8 @@ This has dependency on json-sass npm module (https://github.com/acdlite/json-sas
 3. Representation of JSON colors to sass maps is done.
 4. _utils under themes would read colors from sass maps dynamically using sass map functions.
 5. This can be called from our .scss files from per component.
+6. This should work on any angular-cli starter project, Make sure to copy necessary files.
+7. I did ng-eject for angular-cli project to unpack webpack configurations.
 
 ## Built from concept
 https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184
