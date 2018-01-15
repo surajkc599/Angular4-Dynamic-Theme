@@ -1,18 +1,17 @@
 # TabManagement
-This sample project would mainly shows concept of how we could achieve dynamic theming in Angular application.
-Angular4, Angular Cli, Tabs creation. This sample does not follow any code guidelines- please do refer and infer the concept how we can achieve together with Angular-Cli as a base, SASS and Angular 4.
+This sample project would mainly shows concept of how we could achieve dynamic theming in Angular application. Each theme represents its own colors for the same application.This sample does not follow any code guidelines - please do refer and infer the concept how we can achieve together with Angular-Cli as a base, JSON-Sass, SCSS and Angular 4.
 
 npm run build
 npm run start
 
 This has dependency on json-sass npm module (https://github.com/acdlite/json-sass)
 1. We would represent colors in JSON for multiple themes [Usually designers would map in JSON]
+   src/themes/json
 2. Use the script [jsontosass.js] under src/scripts to generate sass maps.
-3. Representation of JSON colors to sass maps is done.
-4. _utils under themes would read colors from sass maps dynamically using sass map functions.
-5. This can be called from our .scss files from per component.
-6. This should work on any angular-cli starter project, Make sure to copy necessary files.
-7. I did ng-eject for angular-cli project to unpack webpack configurations.
+3. _utils under themes would read colors from sass maps dynamically using sass map functions.
+4. This can be called from our .scss files from per component. Make sure theme class is added to the body of aplication.
+5. This should work on any angular-cli starter project, Make sure to copy necessary files.
+6. I did ng-eject for angular-cli project to unpack webpack configurations.This was required to specify sourceMap property of webpack to true which ensures it reads sass maps generated together with other css files.
 
 ## Built from concept
 https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184
