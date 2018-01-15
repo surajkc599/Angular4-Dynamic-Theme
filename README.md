@@ -5,6 +5,14 @@ Angular4, Angular Cli, Tabs creation. This sample does not follow any code guide
 npm run build
 npm run start
 
+This has dependency on json-sass npm module (https://github.com/acdlite/json-sass)
+1. We would represent colors in JSON for multiple themes [Usually designers would map in JSON]
+2. Use the script [jsontosass.js] under src/scripts to generate sass maps.
+3. Representation of JSON colors to sass maps is done.
+4. _utils under themes would read colors from sass maps dynamically using sass map functions.
+5. This can be called from our .scss files from per component.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
 ## Development server
