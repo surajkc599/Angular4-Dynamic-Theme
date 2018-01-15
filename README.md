@@ -1,4 +1,4 @@
-# Tabs
+# Tabs Angular2 Angular4 dynamic theme/multiple theme using SASS
 This sample project would mainly shows concept of how we could achieve dynamic theming in Angular application. Each theme represents its own colors for the same application.This sample does not follow any code guidelines - please do refer and infer the concept how we can achieve together with Angular-Cli as a base, JSON-Sass, SCSS and Angular 4.
 
 npm run build
